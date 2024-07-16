@@ -75,6 +75,7 @@
   place-content: center;
   gap: 72px;
   color: var(--Dark-electric-blue);
+  max-width: 1440px;
 }
 
 .hero {
@@ -509,6 +510,9 @@ input:hover,
   .result {
     padding: 0 8.75rem;
     gap: 131px;
+    background-image: url("/assets/images/pattern-curved-line-left.svg");
+    background-position: top -35px right 200px;
+    background-repeat: no-repeat;
   }
 
   .result-description {
@@ -542,6 +546,9 @@ input:hover,
     flex-direction: row;
     position: relative;
     padding: 0 8.65rem 6rem;
+    background-image: url("/assets/images/pattern-curved-line-right.svg");
+    background-position: top 35% left 25%;
+    background-repeat: no-repeat;
   }
 
   .bmi-limitations-header {
