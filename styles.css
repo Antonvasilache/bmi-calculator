@@ -448,6 +448,15 @@ input:hover,
     grid-template-columns: 1fr 1fr;
   }
 
+  .hero-result {
+    flex-direction: column;
+  }
+
+  .hero-result-header,
+  .hero-result-content {
+    width: auto;
+  }
+
   .hero-img-container {
     width: 4rem;
     height: 4rem;
