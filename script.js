@@ -55,6 +55,9 @@ function updateBMI(input) {
     //changing the intro strings when a calculation is done
     heroResultIntro.textContent = `Your BMI suggests you are `;
     heroResultWelcome.textContent = `Your BMI is...`;
+    heroResultWelcome.classList.remove("heading-m");
+    heroResultWelcome.classList.add("body-m-bold");
+
     heroResult.style.flexDirection = `row`;
     heroResult.style.alignItems = `center`;
     heroResultHeader.style.width = `50%`;
