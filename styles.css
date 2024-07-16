@@ -90,6 +90,7 @@
   position: absolute;
   top: 0;
   width: 100%;
+  max-width: 61.1rem;
   height: 38.2rem;
   background: linear-gradient(to right, #fff 0%, #d6e6fe 100%);
   border-radius: 0 0 35px 35px;
@@ -197,6 +198,20 @@
 
 .value-input-container span {
   color: var(--Blue);
+}
+
+.value-input-container.metric:active,
+.value-input-container.metric:hover,
+.imperial-unit:active,
+.imperial-unit:hover,
+input:active,
+input:hover,
+#metric:active,
+#metric:hover,
+#imperial:active,
+#imperial:hover {
+  cursor: pointer;
+  border: 1px solid var(--Blue);
 }
 
 .imperial {
@@ -337,4 +352,236 @@
   display: flex;
   gap: 16px;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  .main {
+    gap: 96px;
+  }
+
+  .hero {
+    padding: 2rem 2.6rem 0;
+    gap: 40px;
+  }
+
+  .hero-content {
+    padding: 2.6rem;
+    gap: 32px;
+  }
+
+  .hero-unit {
+    width: 50%;
+  }
+
+  .hero-values {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .hero-result {
+    border-top-left-radius: 164px;
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+    border-bottom-left-radius: 164px;
+    flex-direction: row;
+  }
+
+  .hero-result-header {
+    width: 50%;
+  }
+
+  .hero-result-content {
+    width: 50%;
+  }
+
+  .result {
+    flex-direction: row;
+    gap: 35px;
+  }
+
+  .eating-img-container-wrapper {
+    width: 50%;
+  }
+
+  .eating-img-container {
+    width: 435px;
+    margin-left: -80px;
+  }
+
+  .result-description {
+    padding: 0;
+    padding-right: 2.6rem;
+    width: 50%;
+  }
+
+  .tips {
+    padding: 3.75rem 2.6rem;
+  }
+
+  .tip {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .bmi-limitations {
+    padding: 0 2.6rem 6rem;
+  }
+
+  .bmi-limitations-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 24px;
+    column-gap: 15px;
+  }
+
+  .bmi-limitations-content-item:last-child {
+    grid-column: 1 / -1;
+    width: 50%;
+    justify-self: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-img-container {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .hero-header {
+    grid-row: 2 /3;
+  }
+
+  .hero-content {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  .result {
+    padding: 0 2.6rem;
+  }
+
+  .eating-img-container {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero {
+    padding: 2rem 8.75rem 0;
+    margin-bottom: 65px;
+  }
+
+  .hero-rectangle {
+    left: 24px;
+    height: 46rem;
+  }
+
+  .hero-header {
+    gap: 35px;
+    width: 83%;
+  }
+
+  .hero-title,
+  .hero-description {
+    text-align: left;
+  }
+
+  .hero-title {
+    font-size: 64px;
+    letter-spacing: -4px;
+  }
+
+  .result {
+    padding: 0 8.75rem;
+    gap: 131px;
+  }
+
+  .result-description {
+    padding-bottom: 2.5rem;
+    align-self: end;
+    gap: 35px;
+  }
+
+  .result-description-header {
+    font-size: 48px;
+    letter-spacing: -4px;
+  }
+
+  .eating-img-container {
+    width: 564px;
+  }
+
+  .tips {
+    padding: 3.75rem 8.75rem;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .tip {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 45px;
+  }
+
+  .bmi-limitations {
+    flex-direction: row;
+    position: relative;
+    padding: 0 8.65rem 6rem;
+  }
+
+  .bmi-limitations-header {
+    position: absolute;
+    top: 0;
+    left: 149px;
+    width: 39%;
+    gap: 35px;
+  }
+
+  .bmi-limitations-title,
+  .bmi-limitations-header-text {
+    text-align: left;
+  }
+
+  .bmi-limitations-content {
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding-left: 15rem;
+  }
+
+  .bmi-limitations-content-item {
+    padding: 2rem;
+    align-self: center;
+  }
+
+  .bmi-limitations-content-item:nth-child(1) {
+    grid-column: 6 / 10;
+    grid-row: 1 / 2;
+  }
+
+  .bmi-limitations-content-item:nth-child(2) {
+    grid-column: 3 / 7;
+    grid-row: 2 / 3;
+  }
+
+  .bmi-limitations-content-item:nth-child(3) {
+    grid-column: 7 / 11;
+    grid-row: 2 / 3;
+  }
+
+  .bmi-limitations-content-item:nth-child(4) {
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+  }
+
+  .bmi-limitations-content-item:nth-child(5) {
+    grid-column: 5 / 9;
+    grid-row: 3 / 4;
+    width: auto;
+  }
 }
